@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "@org/eslint-plugin-dprint": [
+                "./packages/eslint-plugin-dprint/build/esm/index.js"
+            ],
+            "@org/eslint-plugin-dprint/test/*": [
+                "./packages/eslint-plugin-dprint/build/test/*"
+            ],
+            "@org/eslint-plugin-dprint/examples/*": [
+                "./packages/eslint-plugin-dprint/build/examples/*"
+            ],
+            "@org/eslint-plugin-dprint/*": [
+                "./packages/eslint-plugin-dprint/build/esm/*"
+            ],
+        }
+    },
+    "include": [
+        "./packages/eslint-plugin-dprint/build/esm/**/*.js",
+        "./packages/eslint-plugin-dprint/build/test/**/*.js",
+        "./packages/eslint-plugin-dprint/build/examples/**/*.js"
+    ]
+}
